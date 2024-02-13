@@ -12,7 +12,7 @@ const Search = ({ placeholder }) => {
         <form className={styles.wrapper} onSubmit={onSubmit}>
             <input className={styles.search} required placeholder={placeholder} />
             <button className={styles.SearchButton} type="submit">
-               <img src={searchIcon} alt="Search" /> {/* Use the imported SVG as an image */}
+               <img src={searchIcon} alt="Searcsh" /> {/* Use the imported SVG as an image */}
             </button>
         </form>
     );
