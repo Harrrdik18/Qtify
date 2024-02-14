@@ -13,6 +13,7 @@
     padding-left: 10px; /* Add left padding to logo */
     margin: auto 0; /* Vertically center the logo */
     padding-right:4rem;
+    padding-left:2em;
 }
 
 .feedback {
