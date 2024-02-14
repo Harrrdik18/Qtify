@@ -8,7 +8,7 @@ import logo from '../../assets/Q-tify.svg'
 const Navbar = () => {
   return (
   
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar}`} style={{ width: '100%' }}>
     <img className={styles.logo} src={logo} alt="Searcsh" />
    <Search placeholder={"Search a album of your choice"}></Search>
    <Button className={styles.feedback}> Give Feedback </Button>
