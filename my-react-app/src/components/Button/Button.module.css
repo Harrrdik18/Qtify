@@ -1,13 +1,19 @@
 .button {
-    background-color: rgb(10, 1, 1);
-    color: #008000; /* Variant of green */
-    border-radius: 12px;
+    background-color: #008000; /* Green background color */
+    color: #ffffff; /* White text color */
+    border-radius: 8px; /* Rounded corners */
     cursor: pointer;
-    padding: .1em 1em;
+    padding: 10px 20px; /* Adjust padding as needed */
     font-family: 'Poppins', sans-serif; /* Use Poppins font */
-}
-
-
-img{
-    padding:15px;
-}
+    border: none; /* Remove border */
+    outline: none; /* Remove default outline */
+  }
+  
+  .button:hover {
+    background-color: #006400; /* Darker green on hover */
+  }
+  
+  .button:focus {
+    box-shadow: 0 0 0 2px #008000; /* Add focus ring */
+  }
+  
