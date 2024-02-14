@@ -1,20 +1,18 @@
-.navbar{
-   background-color: #34C94B;
-   max-width: auto;
-   padding: 10px 20px; /* Add padding as needed */
-   width: 100%; 
-   display: flex;
-   margin: 0px;
+.navbar {
+    background-color: #34C94B; /* Set background color for navbar */
+    max-width: auto; /* Allow navbar to expand to fit content */
+    padding: 10px 20px; /* Add padding inside the navbar */
+    width: 100%; /* Ensure navbar takes up full width of its container */
+    display: flex; /* Use flexbox layout for navbar */
+    margin: 0px; /* Remove any default margin */
 }
 
-.logo{
-    padding-right: .1 rem;
-    background-color: rgb(255, 255, 255);
-    padding: 0;
-    margin: 0;
-    border: solid 5px black;
+.logo {
+    padding-right: 10px; /* Add right padding to logo */
+    padding-left: 10px; /* Add left padding to logo */
+    margin: auto 0; /* Vertically center the logo */
 }
 
-.feedback{
-    margin-top: 1em;
+.feedback {
+    margin-top: 1em; /* Add margin to the top of feedback section */
 }

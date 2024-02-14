@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
   
     <nav className={styles.navbar}>
-    <img clas src={logo} alt="Searcsh" />
+    <img className={styles.logo} src={logo} alt="Searcsh" />
    <Search placeholder={"Search a album of your choice"}></Search>
    <Button className={styles.feedback}> Give Feedback </Button>
       

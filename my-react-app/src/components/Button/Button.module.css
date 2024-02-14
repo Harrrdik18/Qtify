@@ -1,10 +1,12 @@
-.button{
+.button {
     background-color: rgb(10, 1, 1);
-    color:rgb(255, 255, 255);
-    border-radius:12px;
-    cursor: pointer;  
-    padding: 1em;
+    color: #008000; /* Variant of green */
+    border-radius: 12px;
+    cursor: pointer;
+    padding: .1em 1em;
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
 }
+
 
 img{
     padding:15px;
