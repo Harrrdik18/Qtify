@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../Button/Button'
 import Search from '../Search/Search';
 import styles from './navbar.module.css'
-import logo from '../../assets/Q-tify.svg'
+import logo from '../../assets/logo.png'
 
 
 const Navbar = () => {
