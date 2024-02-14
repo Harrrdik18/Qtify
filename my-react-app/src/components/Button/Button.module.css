@@ -1,8 +1,11 @@
 .button{
-    background-color: black;
-    color:green;
+    background-color: rgb(10, 1, 1);
+    color:rgb(255, 255, 255);
     border-radius:12px;
-    padding: 10px 16px;
-    cursor: pointer;
+    cursor: pointer;  
+    padding: 1em;
+}
 
+img{
+    padding:15px;
 }
