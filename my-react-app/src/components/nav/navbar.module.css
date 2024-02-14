@@ -9,12 +9,12 @@
 }
 
 .logo {
-    padding-right: 10px; /* Add right padding to logo */
-    padding-left: 10px; /* Add left padding to logo */
+    padding-right: 4rem; /* Adjust padding as needed */
+    padding-left: 2em; /* Adjust padding as needed */
     margin: auto 0; /* Vertically center the logo */
-    padding-right:4rem;
-    padding-left:2em;
+    margin-right: 25px; /* Add margin to the right */
 }
+
 
 .feedback {
     margin-top: 1em; /* Add margin to the top of feedback section */
