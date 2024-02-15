@@ -18,14 +18,15 @@
 .SearchButton{
     height: 100%;
     cursor: pointer;
-    padding-right: 1.6em;
+    background-color: #FFFFFF;
+    margin-right: 1rem;
+    border: solid 1px #000000;
     
-  
 }
 .srch{
   background-color: #FFFFFF;
-  border: solid 2px black;
-  width:50px;
-  height :100%;
+  padding:0px 10px ;
+  size-adjust: inherit;
+  height :70%;
   
 }

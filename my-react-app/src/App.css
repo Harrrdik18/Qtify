@@ -1,7 +1,9 @@
 
 body{
+ width: auto;
+}
+
+.hero{
   display: flex;
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
+  justify-content: center;
 }

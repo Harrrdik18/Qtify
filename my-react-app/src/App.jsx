@@ -1,10 +1,9 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/nav/navbar'
-import Button from './components/Button/Button'
-import Search from './components/Search/Search'
+import Hero from './components/Hero/Hero'
+
+
 
 
 
@@ -14,6 +13,8 @@ function App() {
   return (
     <> 
   <Navbar />
+
+ <div className='hero'> <Hero className/> </div>
     </>
   )
 }
