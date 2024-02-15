@@ -1,4 +1,7 @@
-hero{
+.hero{
     display: flex;
     align-items: center;
+    justify-items: left;
+    text-align: center;
+    background-color:var(--color-black) ;
 }
