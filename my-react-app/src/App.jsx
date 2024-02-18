@@ -16,7 +16,9 @@ function App() {
     <> 
   <Navbar />
   <div className='hero'> <Hero className/> </div>
-  <Section />
+  <Section title="Top Albums" />
+  <Section title="New Albums" />
+  
   
   
     </>
