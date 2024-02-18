@@ -1,17 +1,18 @@
 /* card.module.css */
 
 .cardContainer {
-  /* Add container styles here if needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
 }
 
 .card {
-  display: inline-block;
   background-color: white;
   border: solid 1px black;
   border-radius: 10px;
   overflow: hidden;
   width: 300px; /* Adjust width as needed */
-  margin: 10px; /* Add margin for spacing between cards */
+  margin-bottom: 10px; /* Add margin to separate cards */
 }
 
 .inner {
@@ -29,13 +30,17 @@
   padding: 10px; /* Add padding to the content */
 }
 
-.title {
-  color: black; /* Set title color to black */
-}
-
 .followers {
   background-color: black; /* Set background color to black */
   color: white; /* Set text color to white */
   padding: 5px 10px; /* Add padding to the box */
   border-radius: 5px; /* Add border radius to round the corners */
+}
+
+.titleContainer {
+  margin-top: 10px; /* Add margin to separate title from card */
+}
+
+.title {
+  color: rgb(255, 255, 255); /* Set title color to black */
 }
