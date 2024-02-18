@@ -17,7 +17,7 @@ function App() {
   <Navbar />
   <div className='hero'> <Hero className/> </div>
   <Section />
-  <Card />
+  
   
     </>
   )
