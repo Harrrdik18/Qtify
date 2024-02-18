@@ -7,11 +7,13 @@
     justify-content: space-between;
     margin-bottom: 10px; /* Vertical spacing between heading and grid */
 }
+
 .album-grid {
     display: grid;
     grid-template-rows: auto auto;
     overflow: hidden; /* Hide overflowing content */
 }
+
 /* Add this CSS to your existing CSS file or create a new one for button styles */
 
 .collapseButton {
@@ -22,7 +24,6 @@
     cursor: pointer;
   }
   
-  .collapseButton:hover {
+.collapseButton:hover {
     text-decoration: underline;
-  }
-  
+}
