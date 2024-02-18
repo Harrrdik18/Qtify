@@ -1,35 +1,41 @@
-.inner{
-    
-   display: inline-flex;
-    position: relative;
-    flex-direction: column;
-    height: 450px;
-    width: 200px;
-}
-.card-container {
-  width: 100%; /* Ensure the container stretches to the full width */
+/* card.module.css */
+
+.cardContainer {
+  /* Add container styles here if needed */
 }
 
 .card {
-  display: inline-block; /* or inline-flex */
+  display: inline-block;
   background-color: white;
-  border: solid 1px black ;
+  border: solid 1px black;
   border-radius: 10px;
   overflow: hidden;
-  height: 400px; /* Increased height */
-  width: 100%; /* Make the card stretch to the full width of its container */
-  max-width: 200px; /* Limit the maximum width of the card */
+  width: 300px; /* Adjust width as needed */
+  margin: 10px; /* Add margin for spacing between cards */
 }
 
-section{
-  background-color: black;
-  border-radius: 10px;
-  padding:10px;
-  margin:5px;
-  color: rgb(255, 255, 255);
-  padding:5px;
-  top:5px;
+.inner {
+  display: flex;
+  flex-direction: column;
 }
-.cardimg{
-  width: 100%; 
+
+.cardimg {
+  width: 100%; /* Ensure the image fills the container */
+  height: auto; /* Maintain aspect ratio */
+  border-bottom: solid 1px black; /* Add border to separate image from content */
+}
+
+.content {
+  padding: 10px; /* Add padding to the content */
+}
+
+.title {
+  color: black; /* Set title color to black */
+}
+
+.followers {
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
+  padding: 5px 10px; /* Add padding to the box */
+  border-radius: 5px; /* Add border radius to round the corners */
 }

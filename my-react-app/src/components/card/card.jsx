@@ -7,9 +7,10 @@ const Card = ({ title, cover, follows }) => {
             <div className={styles.card}>
                 <div className={styles.inner}>
                     <img className={styles.cardimg} src={cover} alt={`Album cover for ${title}`} />
-                    <section>
-                        <h3>{follows} followers </h3>
-                    </section>
+                    <div className={styles.content}>
+                        <h3 className={styles.title}>{title}</h3>
+                        <h3 className={styles.followers}>{follows} followers</h3>
+                    </div>
                 </div>
             </div>
         </div>
