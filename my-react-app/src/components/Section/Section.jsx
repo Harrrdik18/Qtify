@@ -11,9 +11,7 @@ const Section = ({ title }) => {
       // Fetch data from API endpoint
       axios.get('https://qtify-backend-labs.crio.do/albums/top')
           .then(response => {
-              // Limit the number of albums fetched to 12
-              const limitedAlbums = response.data.slice(0, 12);
-              setAlbums(limitedAlbums);
+              setAlbums(response.data);
           })
           .catch(error => {
               console.error('Error fetching data:', error);
@@ -28,9 +26,13 @@ const Section = ({ title }) => {
           </div>
           <div className="row">
               {albums.map(album => (
-                  <div className="col-md-2 mb-4" key={album.id}> {/* Removed mb-5 class */}
-                      <Card title={album.title} follows={album.follows} artist={album.artist} cover={album.image} />
-                  </div>
+                  // Add a check to ensure album data exists before rendering the card
+                  // If album is undefined, return null to skip rendering
+                  album ? (
+                      <div className="col-md-2 mb-4" key={album.id}>
+                          <Card title={album.title} follows={album.follows} artist={album.artist} cover={album.image} />
+                      </div>
+                  ) : null
               ))}
           </div>
       </div>
