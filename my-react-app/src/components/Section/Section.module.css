@@ -1,0 +1,28 @@
+.section {
+    margin-bottom: 20px; /* Vertical spacing */
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Vertical spacing between heading and grid */
+}
+.album-grid {
+    display: grid;
+    grid-template-rows: auto auto;
+    overflow: hidden; /* Hide overflowing content */
+}
+/* Add this CSS to your existing CSS file or create a new one for button styles */
+
+.collapseButton {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+  }
+  
+  .collapseButton:hover {
+    text-decoration: underline;
+  }
+  

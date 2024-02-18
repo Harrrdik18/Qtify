@@ -1,0 +1,35 @@
+.inner{
+    
+   display: inline-flex;
+    position: relative;
+    flex-direction: column;
+    height: 450px;
+    width: 200px;
+}
+.card-container {
+  width: 100%; /* Ensure the container stretches to the full width */
+}
+
+.card {
+  display: inline-block; /* or inline-flex */
+  background-color: white;
+  border: solid 1px black ;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 400px; /* Increased height */
+  width: 100%; /* Make the card stretch to the full width of its container */
+  max-width: 200px; /* Limit the maximum width of the card */
+}
+
+section{
+  background-color: black;
+  border-radius: 10px;
+  padding:10px;
+  margin:5px;
+  color: rgb(255, 255, 255);
+  padding:5px;
+  top:5px;
+}
+.cardimg{
+  width: 100%; 
+}
