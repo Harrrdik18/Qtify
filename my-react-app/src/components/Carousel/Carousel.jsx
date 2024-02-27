@@ -13,7 +13,7 @@ const Carousel = ({ albums }) => {
     // install Swiper modules
     modules={[Navigation, Pagination, Scrollbar, A11y]}
     spaceBetween={10}
-    slidesPerView={8}
+    slidesPerView={2}
     navigation
     pagination={{ clickable: true }}
     scrollbar={{ draggable: true }}

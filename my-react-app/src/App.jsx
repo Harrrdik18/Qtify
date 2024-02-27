@@ -9,8 +9,8 @@ function App() {
     <div>
       <Navbar />
       <div className='hero'> <Hero className/> </div>
-      <Section title="Top" />
-      <Section title="new" />
+      <Section title="Top Albums" />
+      <Section title="New Albums" />
     </div>
   );
 }
