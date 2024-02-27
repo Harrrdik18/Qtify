@@ -1,29 +1,37 @@
+/* Section.module.css */
+
+.cardContainer {
+  max-width: 150px; /* Adjust the max-width to make the cards smaller */
+}
+
+.card {
+  max-width: 100%; /* Adjust the max-width of the card */
+}
+
+.cardimg {
+  max-width: 100%; /* Adjust the max-width of the card image */
+}
+/* Section.module.css */
+
 .section {
-    margin-bottom: 20px; /* Vertical spacing */
+  margin-bottom: 20px; /* Vertical spacing */
+  position: relative; /* Add position relative to enable positioning the button */
 }
 
 .heading {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px; /* Vertical spacing between heading and grid */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; /* Vertical spacing between heading and grid */
 }
-
-.album-grid {
-    display: grid;
-    grid-template-rows: auto auto;
-    overflow: hidden; /* Hide overflowing content */
-}
-
-/* Add this CSS to your existing CSS file or create a new one for button styles */
 
 .collapseButton {
-    background-color: transparent;
-    border: none;
-    color: inherit;
-    font-size: inherit;
-    cursor: pointer;
-  }
-  
-.collapseButton:hover {
-    text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  position: absolute; /* Position the button absolutely within the section */
+  top: 0; /* Position the button at the top */
+  right: 0; /* Position the button at the right */
+  padding: 10px; /* Add padding to the button */
 }

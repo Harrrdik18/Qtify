@@ -3,9 +3,15 @@ import axios from 'axios';
 import Card from '../card/card';
 import styles from "./Section.module.css"; // Importing and assigning styles
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import Carousel from '../Carousel/Carousel';
 
 const Section = ({ title }) => {
   const [albums, setAlbums] = useState([]);
+  const [isCarousel, setIsCarousel] = useState(true); // State to track carousel/grid mode
+
+  const toggleMode = () => {
+    setIsCarousel(!isCarousel); // Toggle between carousel and grid mode
+  };
 
   useEffect(() => {
       // Fetch data from API endpoint based on the title
@@ -24,14 +30,20 @@ const Section = ({ title }) => {
       <div className={styles.section}> {/* Using styles.section for the class name */}
           <div className={styles.heading}> {/* Using styles.heading for the class name */}
               <h2>{title}</h2>
-              <button className={styles.collapseButton} onClick={() => console.log('Collapse button clicked')}>Collapse</button>
+              <button className={styles.collapseButton} onClick={toggleMode}>
+                {isCarousel ? 'Show All' : 'Collapse'}
+              </button>
           </div>
           <div className="row">
-              {albums.map(album => (
-                  <div className="col-md-2 mb-4" key={album.id}>
-                      <Card title={album.title} follows={album.follows} artist={album.artist} cover={album.image} />
-                  </div>
-              ))}
+              {isCarousel ? (
+                  <Carousel albums={albums} />
+              ) : (
+                  albums.length > 0 && albums.map(album => (
+                      <div className="col-md-2 mb-4" key={album.id}>
+                          <Card title={album.title}  follows={album.follows} artist={album.artist} image={album.image} />
+                      </div>
+                  ))
+              )}
           </div>
       </div>
   );

@@ -1,28 +1,18 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './components/nav/navbar'
-import Hero from './components/Hero/Hero'
-import Section from './components/Section/Section'
-import Card from './components/card/card'
-
-
-
-
+import React from 'react';
+import './App.css';
+import Navbar from './components/nav/navbar';
+import Hero from './components/Hero/Hero';
+import Section from './components/Section/Section';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <> 
-  <Navbar />
-  <div className='hero'> <Hero className/> </div>
-  <Section title="Top Albums" />
-  <Section title="New Albums" />
-  
-  
-  
-    </>
-  )
+    <div>
+      <Navbar />
+      <div className='hero'> <Hero className/> </div>
+      <Section title="Top" />
+      <Section title="new" />
+    </div>
+  );
 }
 
-export default App
+export default App;
