@@ -11,6 +11,7 @@ const Section = ({ title }) => {
 
   const toggleMode = () => {
     setIsCarousel(!isCarousel); // Toggle between carousel and grid mode
+    console.log(`Toggled to ${isCarousel ? 'grid' : 'carousel'} mode`);
   };
 
   useEffect(() => {
