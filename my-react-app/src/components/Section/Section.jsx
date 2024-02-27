@@ -31,7 +31,7 @@ const Section = ({ title }) => {
           <div className={styles.heading}> {/* Using styles.heading for the class name */}
               <h2>{title}</h2>
               <button className={styles.collapseButton} onClick={toggleMode}>
-                {isCarousel ? 'Show All' : 'Collapse'}
+                {isCarousel ? 'show all' : 'Collapse'}
               </button>
           </div>
           <div className="row">
