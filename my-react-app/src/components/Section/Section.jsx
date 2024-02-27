@@ -7,7 +7,7 @@ import Carousel from '../Carousel/Carousel';
 
 const Section = ({ title }) => {
   const [albums, setAlbums] = useState([]);
-  const [isCarousel, setIsCarousel] = useState(true); // State to track carousel/grid mode
+  const [isCarousel, setIsCarousel] = useState(false); // Default to grid view
 
   const toggleMode = () => {
     setIsCarousel(!isCarousel); // Toggle between carousel and grid mode
