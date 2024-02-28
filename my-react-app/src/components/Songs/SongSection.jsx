@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./SongSection.module.css";
 import { CircularProgress } from "@mui/material";
 import Carousel from "../Carousel/Carousel";
-import Card from "../Card/Card";
+import Card from "../card/Card";
 
 const filterSongs = (data, type) => {
   const filtered = data.filter((item) => item.genre.key === type);
