@@ -1,37 +1,22 @@
-/* Section.module.css */
-
-.cardContainer {
-  max-width: 150px; /* Adjust the max-width to make the cards smaller */
-}
-
-.card {
-  max-width: 100%; /* Adjust the max-width of the card */
-}
-
-.cardimg {
-  max-width: 100%; /* Adjust the max-width of the card image */
-}
-/* Section.module.css */
-
-.section {
-  margin-bottom: 20px; /* Vertical spacing */
-  position: relative; /* Add position relative to enable positioning the button */
-}
-
-.heading {
+.header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px; /* Vertical spacing between heading and grid */
+  align-items: baseline;
 }
-
-.collapseButton {
-  background-color: transparent;
-  border: none;
-  color: inherit;
-  font-size: inherit;
+.cardWrapper {
+  margin-top: 18px;
+}
+.wrapper {
+  display: flex;
+  gap: 29px;
+  flex-wrap: wrap;
+}
+.toggleText {
   cursor: pointer;
-  position: absolute; /* Position the button absolutely within the section */
-  top: 0; /* Position the button at the top */
-  right: 0; /* Position the button at the right */
-  padding: 10px; /* Add padding to the button */
+  color: var(--color-primary);
+}
+.circularProgress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

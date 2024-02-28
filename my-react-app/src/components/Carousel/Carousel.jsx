@@ -1,38 +1,40 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import 'swiper/css/bundle';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-// Install Swiper modules
+import React, { useEffect } from "react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import "swiper/css";
+import styles from "./Carousel.module.css";
+import { Navigation } from "swiper/modules";
+import CarouselLeftNavigation from "./CarouselLeftNavigation/CarouselLeftNavigation";
+import CarouselRightNavigation from "./CarouselRightNavigation/CarouselRightNavigation";
 
-const Carousel = ({ albums }) => {
+const Controls = ({ swiper }) => {
+  useEffect(() => {
+    swiper?.slideTo(0); // Optional chaining operator to safely access slideTo method
+  }, [swiper]);
+
+  return null;
+};
+
+const Carousel = ({ data, renderCardComponent }) => {
+  const swiper = useSwiper();
+
   return (
-    <Swiper
-    // install Swiper modules
-    modules={[Navigation, Pagination, Scrollbar, A11y]}
-    spaceBetween={10}
-    slidesPerView={2}
-    navigation
-    pagination={{ clickable: true }}
-    scrollbar={{ draggable: true }}
-    onSwiper={(swiper) => console.log(swiper)}
-    onSlideChange={() => console.log('slide change')}
-  >
-      {albums.map(album => (
-        <SwiperSlide key={album.id}>
-          <div>
-            {/* Render album details */}
-            <img src={album.image} alt={album.title} />
-            <p>{album.title}</p>
-            <p>{album.artist}</p>
-            <p>{album.follows} followers</p>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className={styles.wrapper}>
+      <Swiper
+        initialSlide={0}
+        modules={[Navigation]} // Use an array for modules
+        slidesPerView={"auto"}
+        spaceBetween={40}
+        allowTouchMove={true}
+      >
+        {swiper && <Controls swiper={swiper} />} {/* Render Controls if swiper is defined */}
+        <CarouselLeftNavigation />
+        <CarouselRightNavigation />
+        {data.map((item) => (
+          <SwiperSlide key={item.id}>{renderCardComponent(item)}</SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
-}
+};
 
 export default Carousel;

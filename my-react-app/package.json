@@ -17,6 +17,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "swiper": "^11.0.6",
+    "swiper-react": "^1.0.0",
     "tailwind": "^4.0.0"
   },
   "devDependencies": {
